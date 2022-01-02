@@ -66,6 +66,7 @@ A simple way to verify the correctness of your implementation of sort
 is to run the standard unix sort command on the output of 'showsort'.
 For example, to generate, sort, and verify a 1 megabyte file:
 
+```bash
 $ bin/gensort example1.dat "1 mb"
 No random seed provided, using current timestamp
 Initializing the random seed to 1641144051385376000
@@ -81,7 +82,10 @@ File is sorted
 $ bin/showsort example1.dat | sort > example1-chk.txt
 $ bin/showsort example1-sorted.dat| sort > example1-sorted-chk.txt
 $ diff example1-chk.txt example1-sorted-chk.txt
+```
 
 This last 'diff' should simply return to the command prompt. If it
 indicates any differences that means that there is an error
 in your sort routine.
+
+You can try this verification for different file sizes, including 0 bytes and 100 bytes
