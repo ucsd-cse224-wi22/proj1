@@ -81,3 +81,5 @@ $ diff example1-chk.txt example1-sorted-chk.txt
 This last 'diff' should simply return to the command prompt. If it
 indicates any differences that means that there is an error
 in your sort routine.
+
+You can try this verification for different file sizes, including 0 bytes and 100 bytes
