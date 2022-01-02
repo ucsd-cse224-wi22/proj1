@@ -54,6 +54,12 @@ produces a sorted version of the output file.
 
 Usage: bin/sort inputfile outputfile
 
+## Building
+
+To build your sort program:
+
+$ go build -o bin/sort src/sort.go
+
 ## Verifying your sort implementation
 
 A simple way to verify the correctness of your implementation of sort
